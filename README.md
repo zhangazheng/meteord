@@ -1,6 +1,9 @@
 [![Circle CI](https://circleci.com/gh/meteorhacks/meteord/tree/master.svg?style=svg)](https://circleci.com/gh/meteorhacks/meteord/tree/master)
 ## MeteorD - Docker Runtime for Meteor Apps
 
+**青云上部署Meteor 1.3.2 版本项目成功**
+ps:加上REBUILD_NPM_MODULE :1 启动不起来
+
 There are two main ways you can use Docker with Meteor apps. They are:
 
 1. Build a Docker image for your app
