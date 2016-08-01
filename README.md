@@ -1,5 +1,6 @@
 ## build
 ```
+    git clone https://github.com/zhangazheng/meteord.git
     cd base
     docker build -t zhangzheng/meteord:1.3.2 .
 ```
