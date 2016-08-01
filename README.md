@@ -6,7 +6,14 @@
 ```
 ## use
 ```
-    docker run -d -p 3000:80 --name=meteorproject zhangzheng/meteord:1.3.2
+    docker run -d \
+    -e ROOT_URL=http://yourapp.com \
+    -e MONGO_URL=mongodb://url \
+    -e MONGO_OPLOG_URL=mongodb://oplog_url \
+    -v /mybundle_dir:/bundle \
+    -p 8080:80 \
+    --name=projectname \
+    zhangzheng/meteord:1.3.2
 ```
 
 [![Circle CI](https://circleci.com/gh/meteorhacks/meteord/tree/master.svg?style=svg)](https://circleci.com/gh/meteorhacks/meteord/tree/master)
