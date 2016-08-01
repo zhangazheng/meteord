@@ -1,3 +1,13 @@
+## build
+```
+    cd base
+    docker build -t zhangzheng/meteord:1.3.2 .
+```
+## use
+```
+    docker run -d -p 3000:80 --name=meteorproject zhangzheng/meteord:1.3.2
+```
+
 [![Circle CI](https://circleci.com/gh/meteorhacks/meteord/tree/master.svg?style=svg)](https://circleci.com/gh/meteorhacks/meteord/tree/master)
 ## MeteorD - Docker Runtime for Meteor Apps
 
