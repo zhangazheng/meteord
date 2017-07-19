@@ -1,5 +1,5 @@
 set -e
-
+npm config set registry http://c.visual3d.cn:4873
 if [ -d /bundle ]; then
   cd /bundle
   tar xzf *.tar.gz
