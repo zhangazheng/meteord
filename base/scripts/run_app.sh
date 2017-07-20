@@ -1,5 +1,6 @@
 set -e
 npm config set registry http://c.visual3d.cn:4873
+npm install -g node-gyp
 if [ -d /bundle ]; then
   cd /bundle
   tar xzf *.tar.gz
@@ -14,7 +15,9 @@ elif [[ $BUNDLE_URL ]]; then
   npm i
   cd /tmp/bundle/
 elif [ -d /built_app ]; then
-  cd /built_app
+  cd /built_app/programs/server/
+  npm i
+  cd /built_app/
 else
   echo "=> You don't have an meteor app to run in this image."
   exit 1

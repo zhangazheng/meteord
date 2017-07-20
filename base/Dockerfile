@@ -1,6 +1,7 @@
 FROM debian:wheezy
 MAINTAINER MeteorHacks Pvt Ltd.
 
+COPY sources.list /etc/apt/sources.list
 ENV METEORD_DIR /opt/meteord
 COPY scripts $METEORD_DIR
 
