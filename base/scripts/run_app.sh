@@ -15,8 +15,6 @@ elif [[ $BUNDLE_URL ]]; then
   npm i
   cd /tmp/bundle/
 elif [ -d /built_app ]; then
-  cd /built_app/programs/server/
-  npm i
   cd /built_app/
 else
   echo "=> You don't have an meteor app to run in this image."
