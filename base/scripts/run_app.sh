@@ -1,6 +1,5 @@
 set -e
 npm config set registry http://c.visual3d.cn:4873
-npm install -g node-gyp
 if [ -d /bundle ]; then
   cd /bundle
   tar xzf *.tar.gz
